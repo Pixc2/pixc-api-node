@@ -1,0 +1,14 @@
+version: '3'
+
+networks:
+  pixc-api-node:
+
+services:
+  pixc-api-node:
+    image: node:8-alpine
+    tty: true
+    working_dir: /pixc-api-node
+    volumes:
+      - .:/pixc-api-node
+    networks:
+      pixc-api-node:
