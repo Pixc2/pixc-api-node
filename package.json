@@ -1,16 +1,35 @@
 {
   "name": "pixc-api-node",
+  "description": "Node.js library for pixc.com API",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s-kalaus/pixc-api-node.git"
+  },
+  "license": "MIT",
+  "author": "Sergey Kalaus (@s-kalaus)",
+  "main": "lib/pixc-api-node.js",
+  "keywords": [
+    "pixc",
+    "api",
+    "node.js"
+  ],
+  "bugs": {
+    "url": "https://github.com/s-kalaus/pixc-api-node/issues"
+  },
+  "homepage": "https://pixc.com/api",
   "version": "0.0.1",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --exit --reporter spec ./tests"
+    "test": "jest --config=jest.config.js",
+    "test-watch": "jest --watchAll --config=jest.config.js"
   },
   "dependencies": {
     "request": "^2.88.0"
   },
   "devDependencies": {
     "@types/node": "^11.13.4",
+    "jest": "^24.7.1",
     "jscpd": "^2.0.13",
-    "eslint": "^5.14.1",
+    "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.12.4",

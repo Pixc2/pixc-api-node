@@ -5,10 +5,12 @@ networks:
 
 services:
   pixc-api-node:
-    image: node:8-alpine
+    image: node:10-slim
     tty: true
     working_dir: /pixc-api-node
     volumes:
       - .:/pixc-api-node
+    environment:
+      - DISABLE_OPENCOLLECTIVE=true
     networks:
       pixc-api-node:
