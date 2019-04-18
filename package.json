@@ -1,4 +1,5 @@
 {
+  "version": "0.0.2",
   "name": "pixc-api-node",
   "description": "Node.js library for pixc.com API",
   "repository": {
@@ -17,7 +18,6 @@
     "url": "https://github.com/s-kalaus/pixc-api-node/issues"
   },
   "homepage": "https://pixc.com/api",
-  "version": "0.0.1",
   "scripts": {
     "jscpd": "jscpd -t 0 ./lib/*.js",
     "lint": "eslint ./lib/*.js",

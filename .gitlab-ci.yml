@@ -2,11 +2,6 @@ stages:
   - test
   - build
 
-cache:
-  key: "v1"
-  paths:
-    - node_modules/
-
 image: node:10-slim
 
 before_script:
