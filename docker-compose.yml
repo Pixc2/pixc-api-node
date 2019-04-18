@@ -12,5 +12,6 @@ services:
       - .:/pixc-api-node
     environment:
       - DISABLE_OPENCOLLECTIVE=true
+      - NPM_TOKEN
     networks:
       pixc-api-node:

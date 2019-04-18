@@ -2,8 +2,10 @@ stages:
   - test
   - build
 
-before_script:
-  - npm ci
+cache:
+  key: "v1"
+  paths:
+    - node_modules/
 
 test:
   stage: test
@@ -13,7 +15,6 @@ test:
 build-prod:
   stage: build
   script:
-    - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'>.npmrc
-    - npm publish
+    - make build
   only:
     - master
