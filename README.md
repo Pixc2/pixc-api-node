@@ -69,12 +69,10 @@ pixcApiNode.put('template/1', { active: false }).then(
 #### Result
 
 ```json
-[
-  {
-    "templateId": 1,
-    "active": false
-  }
-]
+{
+  "templateId": 1,
+  "active": false
+}
 ```
 
 ### Example of POST request
@@ -94,14 +92,12 @@ pixcApiNode.post('order', { files: [
 #### Result
 
 ```json
-[
-  {
-    "orderId": 1,
-    "status": 0,
-    "payment": "paid",
-    "templateId": 1
-  }
-]
+{
+  "orderId": 1,
+  "status": 0,
+  "payment": "paid",
+  "templateId": 1
+}
 ```
 
 ### Example of DELETE request
