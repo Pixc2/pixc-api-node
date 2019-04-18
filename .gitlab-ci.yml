@@ -9,6 +9,10 @@ cache:
 
 before_script:
   - apk update
+  - apk add --no-cache build-base
+  - apk add --no-cache python-dev
+  - apk add --no-cache libffi-dev
+  - apk add --no-cache libressl-dev
   - apk add --no-cache py-pip
   - apk add --no-cache make
   - pip install docker-compose
