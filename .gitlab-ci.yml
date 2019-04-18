@@ -7,6 +7,12 @@ cache:
   paths:
     - node_modules/
 
+before_script:
+  - apk update
+  - apk add --no-cache py-pip
+  - apk add --no-cache make
+  - pip install docker-compose
+
 test:
   stage: test
   script:
