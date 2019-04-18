@@ -1,0 +1,19 @@
+stages:
+  - test
+  - build
+
+before_script:
+  - npm ci
+
+test:
+  stage: test
+  script:
+    - make test
+
+build-prod:
+  stage: build
+  script:
+    - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'>.npmrc
+    - npm publish
+  only:
+    - master

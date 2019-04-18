@@ -19,8 +19,13 @@
   "homepage": "https://pixc.com/api",
   "version": "0.0.1",
   "scripts": {
-    "test": "jest --config=jest.config.js",
-    "test-watch": "jest --watchAll --config=jest.config.js"
+    "jscpd": "jscpd -t 0 ./lib/*.js",
+    "lint": "eslint ./lib/*.js",
+    "test": "jest --coverage --config=jest.config.js",
+    "test-watch": "jest --coverage  --watchAll --config=jest.config.js"
+  },
+  "engines": {
+    "node": ">=10.15.3"
   },
   "dependencies": {
     "request": "^2.88.0"
