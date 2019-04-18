@@ -7,24 +7,22 @@ cache:
   paths:
     - node_modules/
 
+image: node:10-slim
+
 before_script:
-  - apk update
-  - apk add --no-cache build-base
-  - apk add --no-cache python-dev
-  - apk add --no-cache libffi-dev
-  - apk add --no-cache libressl-dev
-  - apk add --no-cache py-pip
-  - apk add --no-cache make
-  - pip install docker-compose
+  - npm ci
 
 test:
   stage: test
   script:
-    - make test
+    - npm run lint
+    - npm run jscpd
+    - npm test
 
-build-prod:
+build:
   stage: build
   script:
-    - make build
+    - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'>.npmrc
+    - npm publish
   only:
     - master
