@@ -1,10 +1,10 @@
 {
-  "version": "0.0.3",
+  "version": "0.0.4",
   "name": "pixc-api-node",
   "description": "Node.js library for pixc.com API",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/s-kalaus/pixc-api-node.git"
+    "url": "git+https://github.com/Pixc2/pixc-api-node.git"
   },
   "license": "MIT",
   "author": "Sergey Kalaus (@s-kalaus)",
@@ -15,7 +15,7 @@
     "node.js"
   ],
   "bugs": {
-    "url": "https://github.com/s-kalaus/pixc-api-node/issues"
+    "url": "https://github.com/Pixc2/pixc-api-node/issues"
   },
   "homepage": "https://pixc.com/api",
   "scripts": {
