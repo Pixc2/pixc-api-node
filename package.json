@@ -1,5 +1,5 @@
 {
-  "version": "0.0.4",
+  "version": "0.0.5",
   "name": "pixc-api-node",
   "description": "Node.js library for pixc.com API",
   "repository": {

@@ -1,7 +1,7 @@
 pixc-api-node
 ==============
 
-[![travis ci](https://travis-ci.org/s-kalaus/pixc-api-node.svg?branch=master)](https://travis-ci.org/s-kalaus/pixc-api-node)
+[![travis ci](https://travis-ci.org/Pixc2/pixc-api-node.svg?branch=master)](https://travis-ci.org/Pixc2/pixc-api-node)
 
 Node.js Pixc API bindings. API docs available here: https://pixc.com/api
 
